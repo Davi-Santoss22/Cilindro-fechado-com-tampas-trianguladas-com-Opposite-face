@@ -47,6 +47,15 @@ def get_shear_xy_matrix(shx, shy):
         [0, 0, 1,   0],
         [0, 0, 0,   1]
     ]
+    
+def get_reflection_x_matrix():
+    """Reflete (espelha) o objeto em relação ao eixo X."""
+    return [
+        [-1, 0,  0, 0],
+        [0,  1,  0, 0],
+        [0,  0,  1, 0],
+        [0,  0,  0, 1]
+    ]
 
 # ==========================================
 # 2. MODELAGEM DO CILINDRO
@@ -179,15 +188,7 @@ def print_coordinates(vertices):
 # ==========================================
 # 4. EXECUÇÃO PRINCIPAL
 # ==========================================
-if __name__ == "__main__":
-   def get_reflection_x_matrix():
-    """Reflete (espelha) o objeto em relação ao eixo X."""
-    return [
-        [-1, 0,  0, 0],
-        [0,  1,  0, 0],
-        [0,  0,  1, 0],
-        [0,  0,  0, 1]
-    ]
+
 
 if __name__ == "__main__":
     # Cria o cilindro original
